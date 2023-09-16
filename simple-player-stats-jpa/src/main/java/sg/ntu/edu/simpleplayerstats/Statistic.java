@@ -12,6 +12,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.PastOrPresent;
 import javax.validation.constraints.Size;
+import org.hibernate.exception.ConstraintViolationException;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
@@ -32,10 +33,10 @@ public class Statistic {
   private Long id;
 
   @Column(name = "goals")
-  private int goals;
+  private Long goals;
 
   @Column(name = "assists")
-  private int assists;
+  private Long assists;
 
   @Column(name = "opposition")
   private String opposition;

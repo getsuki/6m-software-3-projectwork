@@ -10,10 +10,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/statistic")
 public class StatisticController {
-
+    
+    @Autowired
     private StatisticService statisticService;
 
-    @Autowired
+    
     public StatisticController(StatisticService statisticService) {
         this.statisticService = statisticService;
     }

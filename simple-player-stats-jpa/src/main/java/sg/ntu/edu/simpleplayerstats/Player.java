@@ -9,11 +9,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+
 import java.util.List;
 
 @Getter
@@ -126,7 +123,6 @@ public class Player {
                 return false;
         } else if (!nationality.equals(other.nationality))
             return false;
-
         if (statistics == null) {
             if (other.statistics != null)
                 return false;
