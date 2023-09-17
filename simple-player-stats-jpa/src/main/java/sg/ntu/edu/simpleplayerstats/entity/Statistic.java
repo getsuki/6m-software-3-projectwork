@@ -1,4 +1,4 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.entity;
 
 import java.time.LocalDate;
 
@@ -42,7 +42,7 @@ public class Statistic {
   private String opposition;
 
   @Column(name = "match_date")
-  // @PastOrPresent(message = "Match date should not be in the future")
+  @PastOrPresent(message = "Match date should not be in the future")
   private LocalDate matchDate;
 
   @ManyToOne

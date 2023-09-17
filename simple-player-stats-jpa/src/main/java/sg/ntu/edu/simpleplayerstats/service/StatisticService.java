@@ -1,6 +1,8 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.service;
 
 import java.util.List;
+
+import sg.ntu.edu.simpleplayerstats.entity.Statistic;
 
 public interface StatisticService {
     // CREATE

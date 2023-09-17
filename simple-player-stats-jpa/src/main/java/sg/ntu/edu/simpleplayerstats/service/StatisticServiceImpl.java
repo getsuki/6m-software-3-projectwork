@@ -1,10 +1,13 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.service;
 
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 import lombok.AllArgsConstructor;
+import sg.ntu.edu.simpleplayerstats.entity.Statistic;
+import sg.ntu.edu.simpleplayerstats.exception.StatisticNotFoundException;
+import sg.ntu.edu.simpleplayerstats.repository.StatisticRepository;
 
 @Service
 @AllArgsConstructor

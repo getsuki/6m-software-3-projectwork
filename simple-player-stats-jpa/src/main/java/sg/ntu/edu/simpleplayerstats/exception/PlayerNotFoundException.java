@@ -1,7 +1,7 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.exception;
 
 public class PlayerNotFoundException extends RuntimeException {
-    PlayerNotFoundException(Long id) {
+    public PlayerNotFoundException(Long id) {
         super("Could not find player " + id);
     }
 

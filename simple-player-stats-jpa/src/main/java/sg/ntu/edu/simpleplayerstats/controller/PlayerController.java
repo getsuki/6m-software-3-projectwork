@@ -1,10 +1,13 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import lombok.AllArgsConstructor;
+import sg.ntu.edu.simpleplayerstats.entity.Player;
+import sg.ntu.edu.simpleplayerstats.entity.Statistic;
+import sg.ntu.edu.simpleplayerstats.service.PlayerService;
 
 import javax.validation.Valid;
 import java.util.List;

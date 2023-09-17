@@ -1,9 +1,12 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import sg.ntu.edu.simpleplayerstats.entity.Statistic;
+import sg.ntu.edu.simpleplayerstats.service.StatisticService;
 
 import java.util.List;
 

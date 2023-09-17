@@ -1,6 +1,9 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import sg.ntu.edu.simpleplayerstats.entity.Player;
+
 import java.util.List;
 
 public interface PlayerRepository extends JpaRepository<Player, Long> {

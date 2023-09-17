@@ -1,7 +1,7 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.exception;
 
 public class StatisticNotFoundException extends RuntimeException {
-    StatisticNotFoundException(Long id) {
+    public StatisticNotFoundException(Long id) {
         super("Could not find statisic " + id);
     }
 

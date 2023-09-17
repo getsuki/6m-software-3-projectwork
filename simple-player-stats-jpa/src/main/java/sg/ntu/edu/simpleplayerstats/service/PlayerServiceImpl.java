@@ -1,4 +1,4 @@
-package sg.ntu.edu.simpleplayerstats;
+package sg.ntu.edu.simpleplayerstats.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -6,6 +6,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
+import sg.ntu.edu.simpleplayerstats.entity.Player;
+import sg.ntu.edu.simpleplayerstats.entity.Statistic;
+import sg.ntu.edu.simpleplayerstats.exception.PlayerNotFoundException;
+import sg.ntu.edu.simpleplayerstats.repository.PlayerRepository;
+import sg.ntu.edu.simpleplayerstats.repository.StatisticRepository;
 
 @Service
 @AllArgsConstructor
@@ -69,9 +74,5 @@ public class PlayerServiceImpl implements PlayerService {
         return foundPlayers;
     }
 
-	// @Override
-	// public Statistic addStatisticToPlayer(Long id, Statistic statistic) {
-	// 	// TODO Auto-generated method stub
-	// 	throw new UnsupportedOperationException("Unimplemented method 'addStatisticToPlayer'");
-	// }
+
 }

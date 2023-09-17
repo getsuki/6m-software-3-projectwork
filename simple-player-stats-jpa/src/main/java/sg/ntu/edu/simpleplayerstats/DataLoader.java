@@ -4,6 +4,9 @@ import javax.annotation.PostConstruct;
 
 import org.springframework.stereotype.Component;
 
+import sg.ntu.edu.simpleplayerstats.entity.Player;
+import sg.ntu.edu.simpleplayerstats.repository.PlayerRepository;
+
 @Component
 public class DataLoader {
 

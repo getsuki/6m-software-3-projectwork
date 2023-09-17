@@ -11,6 +11,9 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import sg.ntu.edu.simpleplayerstats.exception.PlayerNotFoundException;
+import sg.ntu.edu.simpleplayerstats.exception.StatisticNotFoundException;
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
