@@ -1,3 +1,6 @@
+To use swagger UI
+http://localhost:8080/swagger-ui/index.html#/
+
 #These are the endpoints and how to call the API.
 
 GET All Players
@@ -36,6 +39,14 @@ http://localhost:8080/players/{id}
 GET Search via PlayerName 
 http://localhost:8080/players/search?playerName=Alfred
 
+POST Statistics for Player ID 1 
+http://localhost:8080/players/1/statistics
+{
+    "goals": 2,
+    "assists": 3,
+    "opposition": "Chelsea",
+    "matchDate": "2020-02-20"
+}
 
 
 
