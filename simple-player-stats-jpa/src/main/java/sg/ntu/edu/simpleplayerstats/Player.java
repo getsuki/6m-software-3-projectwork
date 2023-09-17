@@ -1,6 +1,7 @@
 package sg.ntu.edu.simpleplayerstats;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -48,6 +49,7 @@ public class Player {
 
     // Bi-directional relationship
     // One player can have many statistics
+    @JsonIgnore
     @OneToMany(mappedBy = "player")
     private List<Statistic> statistics;
 

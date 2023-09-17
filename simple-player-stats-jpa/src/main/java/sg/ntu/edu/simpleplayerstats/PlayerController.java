@@ -56,7 +56,7 @@ public class PlayerController {
     // NESTED ROUTE
     @PostMapping("{id}/statistics")
     public ResponseEntity<Statistic> addStatisticToPlayer(@PathVariable Long id,
-                                                          @Valid @RequestBody Statistic statistic) {
+            @RequestBody Statistic statistic) {
         Statistic newStatistic = playerService.addStatisticToPlayer(id, statistic);
         return new ResponseEntity<>(newStatistic, HttpStatus.CREATED);
     }

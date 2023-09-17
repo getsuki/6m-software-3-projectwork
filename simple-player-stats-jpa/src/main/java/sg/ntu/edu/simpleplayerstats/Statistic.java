@@ -33,19 +33,19 @@ public class Statistic {
   private Long id;
 
   @Column(name = "goals")
-  private Long goals;
+  private int goals;
 
   @Column(name = "assists")
-  private Long assists;
+  private int assists;
 
   @Column(name = "opposition")
   private String opposition;
 
   @Column(name = "match_date")
-  @PastOrPresent(message = "Match date should not be in the future")
+  // @PastOrPresent(message = "Match date should not be in the future")
   private LocalDate matchDate;
 
-  @ManyToOne(optional = false)
+  @ManyToOne
   @JoinColumn(name = "player_id", referencedColumnName = "id")
   private Player player;
 
