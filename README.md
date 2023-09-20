@@ -1,36 +1,53 @@
-# 1.1: Insert Lesson Title
+To use swagger UI
+http://localhost:8080/swagger-ui/index.html#/
 
-## Dependencies
+#These are the endpoints and how to call the API.
 
-Refer to the following markdown file for the respective sections of the class:
-- [Self Studies](./studies.md)
-- [Lesson](./lesson.md)
-- [Assignment](./assignment.md)
+GET All Players
+http://localhost:8080/players
 
-## Lesson Objectives
+GET One Player
+http://localhost:8080/players/{id}
 
-Learners will understand:
-- Insert the knowledge to be acquired
+POST (Create) Player
+http://localhost:8080/players
 
-Learners will be able to:
-- Insert the skillset to be acquired
+{
+        "firstName": "Alfred",
+        "lastName": "Lim",
+        "footballclub": "LiverPool",
+        "playerposition": "Midfielder",
+        "age": 28,
+        "nationality": "Singaporean"
+}
 
-## Lesson Plan
+PUT (Update)
+http://localhost:8080/players/{id}
 
-|Duration|What|How or Why|
-|--------|-----|-------|
-|- 5mins |Start zoom session|So that students can join early and start class on time|
-|10 mins|Self studies check-in|Prepare 3 questions for students to answer as a form of warm up and engaging students with the lesson topic.|
-|30 mins|Conceptual Knowledge| Instructors brief students on the subject matter conceptually before diving into hands on. This section can be shorter but not longer. Use video clips for explanation if necessary.|
-|20 mins|Code Along| Practical hands on|
-||**1 HR MARK**|
-|5 mins|Break|Break|
-|40 mins|Code Along| Practical hands on|
-|5 mins|Buffer|In case of overrun|
-|5 mins|Break||
-|5 mins|Assignment Briefing|Help students to understand the expectation and direction of the assignment to prevent mis-interpretations.|
-||**2 HR MARK**|
-|50 mins|Learners self attempt on assignments|
-|10 mins|Instructors assist learners to push changes to remote repository.|
-||**END CLASS 3 HR MARK**|
+{
+        "firstName": "Alfred",
+        "lastName": "Lim",
+        "footballclub": "Manchester United",
+        "playerposition": "Striker",
+        "age": 28,
+        "nationality": "Singaporean"
+}
+        
+DELETE 
+http://localhost:8080/players/{id}
+
+GET Search via PlayerName 
+http://localhost:8080/players/search?playerName=Alfred
+
+POST Statistics for Player ID 1 
+http://localhost:8080/players/1/statistics
+{
+    "goals": 2,
+    "assists": 3,
+    "opposition": "Chelsea",
+    "matchDate": "2020-02-20"
+}
+
+
+
 
